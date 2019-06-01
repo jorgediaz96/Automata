@@ -1,5 +1,10 @@
 package afndaunafd.modelo;
 
+/**
+ *
+ * @author jorge diaz
+ */
+        
 import java.util.Stack;
 import java.util.TreeSet;
 import java.util.Vector;

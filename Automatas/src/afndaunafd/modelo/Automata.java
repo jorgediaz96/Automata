@@ -1,7 +1,10 @@
 package afndaunafd.modelo;
 
 import java.util.*;
-
+/**
+ *
+ * @author jorge diaz
+ */
 public class Automata {
 
     private String Nombre;
