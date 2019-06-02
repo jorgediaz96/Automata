@@ -16,12 +16,19 @@ import javax.swing.WindowConstants;
 
 
 public class Ventana {
-    /**crearVentana: Crea una ventana*/
+
+    /**Creacion del objeto ventana*/
+    public static JFrame ventana;
+    /**crearVentana: Crea una ventan
+     * @param tituloVentana
+     * @param rutaIconoAplicacion 
+     * @param alto
+     * @param ancho
+     */
     public void crearVentana(String tituloVentana, String rutaIconoAplicacion, int alto, int ancho){
-        /**Creacion del objeto ventana*/
-        JFrame ventana = new JFrame(tituloVentana);
+        ventana = new JFrame(tituloVentana);
         /**Parametros basicos de la ventana*/
-        ventana.setSize(ancho,alto);
+        ventana.setSize(alto,ancho);
         ventana.setUndecorated(false);
         ventana.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         ventana.setResizable(false);
@@ -31,32 +38,17 @@ public class Ventana {
         Image Image = ImageIcon.getImage();
         ventana.setIconImage(Image);
         /**Añadido de paneles a la ventana*/
-        ventana.add(agregarElementos());
         /**Mostrar la ventana*/
         ventana.setVisible(true);
     }
     
-    /**añadido de campos de texto, para que sus valores sean accesibles desde cualquier parte*/
-    public static JTextField alfabeto,expresionRegular,cadena;
-    /**añadirElementos: Añade JButtons JLabels y textFields a La ventan
+    /**Creacion del elemento panel*/
+    public static JPanel panel;    
+    /**añadirElementos: Añade JButtons JLabels y textFields a La ventana
      * @return panel*/
     public JPanel agregarElementos(){
-        JPanel panel = new JPanel();
+        panel = new JPanel();
         panel.setLayout(null);
-        /**añadido de elementos al Panel*/
-        panel.add(crearTexto("Ingrese el alfabeto, separado por comas",150,30,300,30));
-        alfabeto = crearInput(200,70,200,30);
-        panel.add(alfabeto);
-        panel.add(crearTexto("Ingrese la expresion regular",190,110,300,30));
-        expresionRegular = crearInput(200,150,200,30);
-        panel.add(expresionRegular);
-        panel.add(crearTexto("Ingrese la cadena",235,190,300,30));
-        cadena = crearInput(200,230,200,30);
-        panel.add(cadena);
-        panel.add(crearBoton("Comprobar",200,300,200,30));
-        
-        /**Personalizacion del panel*/
-        panel.setBackground(new Color(207, 209, 208));
         return panel;
     }
     
