@@ -32,10 +32,7 @@ public class Transformador {
 
         }
         if (noEsDeterminista()) {
-            JOptionPane.showMessageDialog(null, "Quitando indeterminismo");
-
-            quitarIndeterminismo();
-            JOptionPane.showMessageDialog(null, "Indeterminismo quitado");
+            quitarIndeterminismo();   
 
         } else {
             JOptionPane.showMessageDialog(null, "Ya es determinista");
