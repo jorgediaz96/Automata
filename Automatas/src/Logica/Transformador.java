@@ -25,11 +25,7 @@ public class Transformador {
         tabtrans = automata.getTablaTransiciones();
 
         if (alfabeto.contains("E")) {
-            JOptionPane.showMessageDialog(null, "Quitando tranciciones vacias");
-
             quitarTansicionesVacias();
-            JOptionPane.showMessageDialog(null, "tranciciones vacias quitadas");
-
         } else {
             JOptionPane.showMessageDialog(null, "no tiene tranciciones vacias");
 
