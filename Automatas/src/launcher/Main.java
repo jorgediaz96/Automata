@@ -5,13 +5,13 @@
  */
 package launcher;
 
-import afndaunafd.vista.Pantalla;
-
 /**
  *
  * @author jorge diaz
  */
 public class Main {
-    Pantalla pantalla = new Pantalla();
-    
+    public static void main(String[] args) {
+        
+        
+    }
 }
