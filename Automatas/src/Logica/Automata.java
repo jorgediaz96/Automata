@@ -1,10 +1,8 @@
 package Logica;
 
-import java.util.*;
-/**
- *
- * @author jorge diaz
- */
+import java.util.TreeSet;
+import java.util.Vector;
+
 public class Automata {
 
     private String Nombre;
