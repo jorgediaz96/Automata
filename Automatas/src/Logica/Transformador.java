@@ -1,9 +1,4 @@
 package Logica;
-
-/**
- *
- * @author jorge diaz
- */
         
 import java.util.Stack;
 import java.util.TreeSet;
@@ -48,7 +43,6 @@ public class Transformador {
 
         } else {
             JOptionPane.showMessageDialog(null, "Ya es determinista");
-
         }
 
         while (!verificarMinimo()) {

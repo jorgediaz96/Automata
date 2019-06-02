@@ -18,12 +18,14 @@
 
 package Lanzador;
 
-import Vista.Pantalla;
+import Vista.VentanaGrafos;
 
 public class Ejecutar {
 
     public static void main(String [] args){
-        Pantalla pantalla = new Pantalla();
+        VentanaGrafos ventanaPrincipal = new VentanaGrafos();
+        ventanaPrincipal.crearVentanaGrafos();
+        
     }
     
 }
