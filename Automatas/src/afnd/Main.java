@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package launcher;
+package afnd;
 
 /**
  *
@@ -11,7 +11,6 @@ package launcher;
  */
 public class Main {
     public static void main(String[] args) {
-        
-        
+        new pantalla().setVisible(true);
     }
 }
