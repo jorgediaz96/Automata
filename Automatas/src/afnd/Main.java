@@ -11,6 +11,6 @@ package afnd;
  */
 public class Main {
     public static void main(String[] args) {
-        new pantalla().setVisible(true);
+        
     }
 }
