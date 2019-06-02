@@ -13,4 +13,5 @@ import afndaunafd.vista.Pantalla;
  */
 public class Main {
     Pantalla pantalla = new Pantalla();
+    
 }
