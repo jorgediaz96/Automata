@@ -1,4 +1,4 @@
-package afndaunafd.modelo;
+package Logica;
 
 /**
  *
