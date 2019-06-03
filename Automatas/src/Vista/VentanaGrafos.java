@@ -28,19 +28,17 @@ public class VentanaGrafos {
         
         
         recursosGraficos.crearVentana("Automatas", "../Recursos/iconoAplicacion.png", 800, 600);
-        Ventana.ventana.add(recursosGraficos.agregarElementos());
-        Ventana.panel.add(recursosGraficos.crearTexto("Estados: ", 0, -40, 100, 100));
+        Ventana.ventana.add(recursosGraficos.agregarElementos(800,600));
+        Ventana.panel.add(recursosGraficos.crearTexto("Estados: ", 0, 40, 100, 100));
         //Ventana.panel.add(recursosGraficos.crearTexto(numEstados.toString(), 60, -40, 100, 100));
-        Ventana.panel.add(recursosGraficos.crearTexto("Estados finales: ", 140, -40,300, 100));
+        Ventana.panel.add(recursosGraficos.crearTexto("Estados finales: ", 140, 40,300, 100));
         //Ventana.panel.add(recursosGraficos.crearTexto(z.getestadoFinal().toString(), 260, -40, 100, 100));
-        Ventana.panel.add(recursosGraficos.crearTexto("Alfabeto: ", 330, -40, 100, 100));
+        Ventana.panel.add(recursosGraficos.crearTexto("Alfabeto: ", 330, 40, 100, 100));
         //Ventana.panel.add(recursosGraficos.crearTexto(z.getAlfabeto().toString(), 400, -40, 100, 100));
-        
-        JTextArea textArea1 = new JTextArea("Hola bienvenido");
-        textArea1.setPreferredSize(new Dimension(60,300));
-        textArea1.setLineWrap(true);
-        Ventana.ventana.add(textArea1,100,40);
-        Ventana.ventana.pack();
+
+       Ventana.ventana.add(recursosGraficos.crearAreaTexto(10, 200, 200, 200));
+        //Ventana.ventana.pack();
+        Ventana.ventana.setVisible(true);
     }
     
     public void tabla1(Automata z) {
