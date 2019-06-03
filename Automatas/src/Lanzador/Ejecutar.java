@@ -6,7 +6,6 @@
  * Condiciones:
  * 
  * - La entrada del automata a evaluar sera de forma grafica
- * - La entrada de la cadena se dara por medio de un input
  * 
  * Elaborado por:
  * Jorge Luis Diaz Barragan - 20162020405
