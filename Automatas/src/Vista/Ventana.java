@@ -11,6 +11,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 
@@ -78,6 +79,14 @@ public class Ventana {
     
     public JTextField crearInput(int posX, int posY, int ancho, int alto){
         JTextField campoTexto = new JTextField();
+        campoTexto.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
+        campoTexto.setBounds(new Rectangle(posX, posY, ancho, alto));
+        campoTexto.setSize(ancho, alto);
+        return campoTexto;
+    }
+    
+    public JTextArea crearAreaText(int posX, int posY, int ancho, int alto){
+        JTextArea campoTexto = new JTextArea();
         campoTexto.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
         campoTexto.setBounds(new Rectangle(posX, posY, ancho, alto));
         campoTexto.setSize(ancho, alto);
