@@ -3,6 +3,7 @@ package Vista;
 import Logica.Automata;
 import java.util.TreeSet;
 import Logica.Transformador;
+import java.awt.Dimension;
 import javax.swing.JTextArea;
 
 public class VentanaGrafos {
@@ -35,8 +36,11 @@ public class VentanaGrafos {
         Ventana.panel.add(recursosGraficos.crearTexto("Alfabeto: ", 330, -40, 100, 100));
         //Ventana.panel.add(recursosGraficos.crearTexto(z.getAlfabeto().toString(), 400, -40, 100, 100));
         
-        JTextArea jTextArea1 = new JTextArea("Hola",40,400);
-        Ventana.ventana.add(jTextArea1);
+        JTextArea textArea1 = new JTextArea("Hola bienvenido");
+        textArea1.setPreferredSize(new Dimension(60,300));
+        textArea1.setLineWrap(true);
+        Ventana.ventana.add(textArea1,100,40);
+        Ventana.ventana.pack();
     }
     
     public void tabla1(Automata z) {
